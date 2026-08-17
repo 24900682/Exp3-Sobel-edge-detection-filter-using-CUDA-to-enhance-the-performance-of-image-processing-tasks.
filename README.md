@@ -38,11 +38,11 @@ Discuss the differences in execution time and output quality.
 ## PROGRAM:
 ```
 %%writefile sobelEdgeDetectionFilter.cu
-#include
-#include
-#include
-#include
-#include
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <cuda_runtime.h>
+#include <opencv2/opencv.hpp>
 
 using namespace cv;
 
